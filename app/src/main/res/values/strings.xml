@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Basketball Score</string>
+    <string name="local_team">Local</string>
+    <string name="visitor_team">Visitante</string>
+    <string name="add1">+1</string>
+    <string name="add2">+2</string>
+    <string name="sub1">-1</string>
+    <string name="reset">Reset</string>
+    <string name="view_results">Ver resultados</string>
+    <string name="local_wins">Ha ganado el equipo local</string>
+    <string name="visitor_wins">Ha ganado el equipo visitante</string>
+    <string name="draw">Empate</string>
+    <string name="EQUIPOLOCAL">EQUIPO A</string>
+    <string name="EQUIPOVISITANTE">EQUIPO B</string>
+    <string name="ZERO">0</string>
+    <string name="ZERO2">0</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="ganador">GANADOR</string>
+    <string name="ganador2">GANADOR</string>
+</resources>
