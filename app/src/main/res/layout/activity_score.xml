@@ -13,7 +13,6 @@
         android:layout_height="match_parent"
         tools:context=".ScoreActivity">
 
-        <!-- Guía Vertical en el 50% para dividir la pantalla -->
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/vertical_center_guideline"
             android:layout_width="wrap_content"
@@ -21,7 +20,20 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5" />
 
-        <!-- Titulo -->
+        <ImageView
+            android:id="@+id/appLogo3"
+            android:layout_width="466dp"
+            android:layout_height="280dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toTopOf="@+id/TITULO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375"
+            tools:ignore="MissingConstraints" />
+
         <TextView
             android:id="@+id/TITULO"
             android:layout_width="wrap_content"
@@ -32,23 +44,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.059" />
-
-        <!-- Nombres equipos (corregido: ancho 0dp y restringido a la guía central) -->
+            app:layout_constraintVertical_bias="0.461" />
 
         <TextView
             android:id="@+id/equipoNombreA"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginEnd="8dp"
             android:text="@string/EQUIPOLOCAL"
-            android:textSize="35sp"
             android:textAlignment="viewEnd"
+            android:textSize="35sp"
             app:layout_constraintBottom_toTopOf="@+id/tvLocalScore"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/vertical_center_guideline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.86" />
+            app:layout_constraintVertical_bias="0.97" />
 
         <TextView
             android:id="@+id/equipoNombreB"
@@ -57,22 +69,21 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="24dp"
             android:text="@string/EQUIPOVISITANTE"
-            android:textSize="35sp"
             android:textAlignment="viewStart"
+            android:textSize="35sp"
             app:layout_constraintBottom_toTopOf="@+id/tvVisitorScore"
-            app:layout_constraintStart_toEndOf="@+id/vertical_center_guideline"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/vertical_center_guideline"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.86" />
-
-        <!-- Resultados con asignacion -->
+            app:layout_constraintVertical_bias="0.979" />
 
         <TextView
             android:id="@+id/tvLocalScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="92dp"
-            android:layout_marginTop="240dp"
+            android:layout_marginTop="448dp"
             android:text="@string/ZERO"
             android:textSize="70sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,49 +93,49 @@
             android:id="@+id/tvVisitorScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="240dp"
-            android:layout_marginEnd="92dp"
+            android:layout_marginTop="444dp"
+            android:layout_marginEnd="72dp"
             android:text="@string/ZERO2"
             android:textSize="70sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Texto ganador-->
-
         <TextView
             android:id="@+id/GANADORtitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/ganador2"
             android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.59" />
+            app:layout_constraintVertical_bias="0.818" />
 
         <TextView
             android:id="@+id/GANADOR"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/ganador"
             android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.687" />
-
-        <!-- Boton retroceder-->
+            app:layout_constraintVertical_bias="0.919" />
 
         <ImageButton
             android:id="@+id/Retroceder"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:contentDescription="@string/reset"
-            app:srcCompat="@android:drawable/ic_menu_revert"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

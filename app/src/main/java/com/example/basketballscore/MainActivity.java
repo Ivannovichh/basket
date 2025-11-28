@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
             binding.tvLocalScore.setText(String.valueOf(PuntosA));
         });
 
+        //Funcion boton +3 Equipo Local
+
+        binding.MASTRES.setOnClickListener(v -> {
+            PuntosA += 3;
+            binding.tvLocalScore.setText(String.valueOf(PuntosA));
+        });
+
         //Funcion boton -1 Equipo Local
 
         binding.MENOSUNO.setOnClickListener(v -> {
@@ -52,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
 
         binding.MASDOS2.setOnClickListener(v -> {
             PuntosB += 2;
+            binding.tvVisitorScore.setText(String.valueOf(PuntosB));
+        });
+
+        //Funcion boton +3 Equipo Visitante
+
+        binding.MASTRES2.setOnClickListener(v -> {
+            PuntosB += 3;
             binding.tvVisitorScore.setText(String.valueOf(PuntosB));
         });
 
