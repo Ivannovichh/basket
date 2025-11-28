@@ -69,8 +69,3 @@ Ideal como primer proyecto Android.
 
 ## 🧑‍💻 Autor
 **Iván Sánchez Juárez**
-
----
-
-¡Gracias por visitar el proyecto! 💙 Siéntete libre de mejorarlo o usarlo como base para aprender más sobre Android 👨‍💻📲
-
